@@ -1,4 +1,4 @@
-This is a fork of Rich FitzJohn's original work.  I am attempting to modify it to work on Ubuntu Linux.
+UBC formatting guides can be found [here] (http://koerner.library.ubc.ca/services/research-commons/thesis-formatting-info/).
 
 Any errors to do with `fontenc.sty` and `Metric (TFM) not found` can be solved by installing `texlive-fonts-extra` and `texlive-math-extra`.
 
