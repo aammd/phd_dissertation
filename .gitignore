@@ -4,3 +4,7 @@ thesis.log
 thesis.lot
 thesis.out
 thesis.pdf
+.Rproj.user
+.Rhistory
+build/
+missfont.log
