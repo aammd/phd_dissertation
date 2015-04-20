@@ -10,3 +10,4 @@ thesis.pdf
 *.html
 build/
 missfont.log
+.Rproj.user
