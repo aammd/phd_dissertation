@@ -12,7 +12,23 @@ Subsections are't that much smaller
 
 \subsubsection{A sub subsection}
 
-These are equivalent to the usual paragraph.
+These are equivalent to the usual paragraph (Table \ref{table:sample}).
+
+\begin{center}
+\begin{table}[h]
+\caption{A sample table to test the formatting in the list of tables.  How does
+		 a table with a very long caption look?  Does it fit in the list?}
+\label{table:sample}
+\vspace{10pt}
+\begin{tabular}[c]{l l l}
+\hline
+This 		& Is A 			& Table \\ \hline
+Here are 	& some things	& in the table \\
+Three		& more			& Things \\
+\end{tabular}
+\end{table}
+\end{center}
+
 
 %%% Local Variables:
 %%% TeX-master: "thesis"
