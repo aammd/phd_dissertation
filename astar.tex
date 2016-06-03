@@ -105,14 +105,17 @@ trade-offs between predation resistance and competitive ability could
 also result in different patch size associations of closely related
 species.
 
-\includegraphics{figures/illustration.pdf}\\
-Figure 1: Incidence functions (\textbf{a}) estimate the probability of
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/illustration.pdf}
+\caption{Incidence functions (\textbf{a}) estimate the probability of
 occurrence of a species (y-axis) as a function of habitat size. These
 functions can be estimated using logistic regression, and can be
 parameterized with two values: \(A^{*}\) (The position of the inflection
 point) and \(x\) (the slope at the inflection point). Species can differ
 in either of these parameters: in \textbf{b}, two species differ in
-their \(A^{*}\) value, and in \textbf{c} they differ in \(x\).
+their \(A^{*}\) value, and in \textbf{c} they differ in \(x\).}
+\end{figure}
 
 Variation in response to patch size can be quantified with incidence
 functions. Incidence functions describe how the occurrence, or
@@ -377,47 +380,84 @@ This was our ``competitor absent'' treatment.
 
 \subsubsection{Figures}\label{figures}
 
-\includegraphics[width=5.5in]{figures/pairwise_astars.pdf} Figure 2: Pairwise
-differences in two measures of size response. Each point represents a
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/pairwise_astars.pdf}
+\caption{Pairwise differences in two measures of size response. Each point represents a
 pair of species, divided into species pairs within the same genus (top)
 the same family (middle) and order (bottom). The left panel shows
 differences in \(A^{*}\) values (units are ml) while the right panel
 shows differences in \(x\) (slopes of logistic regression). Species
-pairs which are different from a null model are shaded.
+pairs which are different from a null model are shaded.}
+\end{figure}
 
-\includegraphics[width=5.5in]{figures/overall_null.pdf} Figure 3: Mean pairwise
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/overall_null.pdf}
+\caption{Mean pairwise
 differences between species in two measures of patch size responses:
 patch size threshold (\(A^{*}\)) and strength of patch size preference
 (\(x\)). Dashed vertical lines represent observed means for all species
-pairs. Grey histograms represent means for 999 null simulations.
+pairs. Grey histograms represent means for 999 null simulations.}
+\end{figure}
 
-\includegraphics[width=5.5in]{figures/ses_rank.pdf}\\
-Figure 4: Standardized effect sizes (SES) of pairwise differences
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/ses_rank.pdf}
+\caption{Standardized effect sizes (SES) of pairwise differences
 between species for two different measures of habitat size sensitivity.
 These two measures are critical habitat size (\(A^{*}\)) and strength of
 habitat size dependency (\(x\)). Pairwise differences are shown within
 each of three taxonomic levels. Significant standardized effect sizes
-(randomization p-value \textless{} 0.05) are indicated with points.
+(randomization p-value \textless{} 0.05) are indicated with points.}
+\end{figure}
 
-\includegraphics[width=5.5in]{figures/astar.pdf} Figure 5: Differences in observed
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/astar.pdf}
+\caption{Differences in observed
 threshold habitat size (\(A^{*}\)) increases with taxonomic similarity
 of species pairs, measured as the lowest taxonomic rank in common
 between two species (black line connects observed means of each
-taxonomic rank).
+taxonomic rank).}
+\end{figure}
 
-\includegraphics[width=5.5in]{figures/xbar.pdf} Figure 6: Differences in habitat
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/xbar.pdf}
+\caption{Differences in habitat
 size sensitivity (\(x\)) between pairs of species, as a function of
 their taxonomic similarity, measured as the lowest taxonomic rank in
 common between the two species. Habitat size sensitivity was measured as
 the slope of the incidence function. Black dots indicate observed
 species pairs; black line connects means of observed values. We observed
-no relationship between differences and taxonomic relatedness.
+no relationship between differences and taxonomic relatedness.}
+\end{figure}
 
-\includegraphics[width=5.5in]{figures/poly_curve.pdf} Figure 7: Two closely
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/poly_curve.pdf}
+\caption{Two closely
 related species that show very different responses to habitat size.
 \emph{Polypedilum marcondesi} is a habitat size specialist occurring
 only in large plants. \emph{Polypedilum kaingang} is found across the
-gradient of bromeliad size. Note logarithmic x-axis scale.
+gradient of bromeliad size. Note logarithmic x-axis scale.}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/anova_data.pdf}
+\caption{Survival (larvae + emergences) of \emph{P. marcondesi} and
+\emph{P. kaingang}.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5.5in]{figures/confints.pdf}
+\caption{confidence intervals}
+\end{figure}
+
 
 \subsection{Results}\label{results}
 
@@ -486,13 +526,6 @@ factor had a significant impact on chironomid performance (\emph{P.
 marcondesi}, F\textsubscript{2,74} = 4.7, p = 0.012; \emph{P. kaingang},
 F\textsubscript{2,74} = 7.1, p = 0.0019). This effect was driven by
 predators; competitors had no effect on either species (Figure 8).
-
-\includegraphics[width=5.5in]{figures/anova_data.pdf}\\
-Figure 9: Survival (larvae + emergences) of \emph{P. marcondesi} and
-\emph{P. kaingang}.
-
-\includegraphics[width=5.5in]{figures/confints.pdf} Figure 8: confidence
-intervals\\
 
 \subsection{Discussion}\label{discussion}
 
