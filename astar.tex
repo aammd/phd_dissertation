@@ -7,7 +7,7 @@ Many ecological communities exist across patchy habitats. In such
 communities, not all species are found in all patches -- some are
 present in only large patches, some only in small patches, others show a
 weak relationship to patch size \citep{Taylor1991, Lomolino2000}. This
-variation in habitat size sensitivity has important community-level
+variation in patch size response has important community-level
 consequences. For example, preference for different patch sizes may
 facilitate coexistence among similar species \citep{Gilbert2008}.
 Variation among individual species in their response to patch size also
@@ -18,7 +18,7 @@ species' response to patch size is determined by at least three
 different covariates of patch size: numerical effects, abiotic
 variation, and species interactions. To understand how species are
 distributed across patches, we need to first measure the extent to which
-each of these processes varies with habitat size.
+each of these processes varies with patch size.
 
 Some of the variation in species occurrence across patches is caused by
 numerical effects. Numerical effects are the combined result of two
@@ -109,7 +109,7 @@ species.
 \centering
 \includegraphics[width=5.5in]{figures/illustration.pdf}
 \caption[Conceptual diagram of incidence functions]{Incidence functions (\textbf{a}) estimate the probability of
-occurrence of a species (y-axis) as a function of habitat size. These
+occurrence of a species (y-axis) as a function of patch size. These
 functions can be estimated using logistic regression, and can be
 parameterized with two values: \(A^{*}\) (The position of the inflection
 point) and \(x\) (the slope at the inflection point). Species can differ
@@ -119,7 +119,7 @@ their \(A^{*}\) value, and in \textbf{c} they differ in \(x\).}
 
 Variation in response to patch size can be quantified with incidence
 functions. Incidence functions describe how the occurrence, or
-incidence, of a species changes over a gradient of habitat size. This
+incidence, of a species changes over a gradient of patch size. This
 use of incidence functions originated with the study of birds on
 tropical islands \citep{Diamond1986} and has been extended to predicting
 parameters of the species-area relationship \citep{Ovaskainen2003}. The
@@ -131,7 +131,7 @@ is proportional to the slope of the curve at that value (Figure 1). In
 other words, \(A^{*}\) describes the threshold size of patch in which a
 species is found, and \(x\) describes the strength of patch size
 preference. These two ways of expressing response to area give us a
-means to understand how species coexist along a habitat size gradient.
+means to understand how species coexist along a patch size gradient.
 Coexistence may be promoted in two ways: species may partition the size
 gradient (i.e.~having different \(A^{*}\) values), or species may form a
 generalist-specialist pair (have different \(x\) values). Partitioning
@@ -148,14 +148,12 @@ productive elevations \citep{Sheppard1971}.
 
 We tested three hypotheses related to patch size response. First, using
 observational data, we account for numerical effects and test three
-hypotheses about community-level patterns: (1) there is more variation
-in patch size sensitivity than expected by chance (i.e.~that species are
-divergent in patch size sensitivity). (2) species pairs are divergent in
+hypotheses about community-level patterns: (1) there is more variation among species
+in patch size response than expected by chance. (2) species pairs are divergent in
 both their critical size threshold (\(A^{*}\) value) and the strength of
 preferences (\(x\) value). (3) that this divergence in patch size
 response is greater for close relatives. We then use an experiment to
-test three hypotheses about species-level processes causing patch size
-sensitivity: (4) species trade off their ability to tolerate
+test three hypotheses about species-level processes causing this between-species variation: (4) species trade off their ability to tolerate
 environmental conditions associated with different patch sizes with
 their ability to withstand either competition or predation. (5)
 competition alone limits the distribution of species along a gradient of
@@ -167,7 +165,7 @@ along a gradient of patch sizes.
 \subsubsection{Study system}\label{study-system}
 
 Bromeliads offer a useful system in which to study the effects of
-habitat size on species occurrence. Bromeliads (Bromeliaceae) are
+patch size on species occurrence. Bromeliads (Bromeliaceae) are
 flowering plants found throughout the Neotropics. Many members of the
 family form ``tanks'' in their leaf wells, which collect rainwater and
 detritus. This phytotelmata is the habitat for a community of
@@ -188,7 +186,7 @@ affects the efficiency of predators \citep{Srivastava2006a}, whereas
 detritus and algae represent resources for many macroinvertebrates
 (Farjalla et al. 2016). The ease with which bromeliads are sampled and
 manipulated makes them ideal systems for investigating differences
-between coexisting species in sensitivity to patch size. Both
+between coexisting species in response to patch size. Both
 observations and experiments were conducted in Parque Estadual da Ilha
 do Cardoso (25\textsuperscript{o} 03' S, 47\textsuperscript{o} 53' W), a
 22.5 ha island off the south coast of São Paulo state, Brazil. We worked
@@ -211,15 +209,14 @@ volume of water into the bromeliad and subtracting the overflow.
 \paragraph{(1) Community-level variation in patch size
 response}\label{community-level-variation-in-patch-size-response}
 
-To quantify variation in size sensitivity we calculated an unbiased
+To quantify variation in size response we calculated an unbiased
 measurement of average pairwise differences in species responses, which
 requires two steps: first, estimating average difference between species
 in patch size response from data, and second, comparing this community
-average to a null model. \textbf{Step 1:} We modeled the presence of
-invertebrate species as a function of maximum plant volume (log
-transformed). We calculated the size sensitivity of a species in two
-ways (Figure 1): as the inflection point of this logistic curve -- the
-``\(A^{*}\) value'' -- and as \(x\), the slope of the linear predictor
+average to a null model. \textbf{Step 1:} We modelled the presence of
+invertebrate species as a logistic function of maximum plant volume (log
+transformed). We calculated two parameters from these logistic curves: as the inflection point -- the
+``\(A^{*}\) value'' -- and \(x\), the slope of the linear predictor
 \citep{Ovaskainen2003}. The ``\(A^{*}\) value'' corresponds to the plant
 volume with a 50\% chance of species occurrence (i.e.~the inflection
 point of a logistic curve). For every pair of species we quantified the
@@ -239,8 +236,8 @@ We calculated the average patch size response as the average difference
 between all pairs of species in their \(D_{b_{ij}}\) values (i.e.~for
 both \(A^{*}\) and \(x\)).
 
-\textbf{Step 2:} Species abundances can create spurious patterns in size
-sensitivity estimates; we therefore used a null model to create an
+\textbf{Step 2:} Species abundances can create spurious patterns in measurements of
+patch size response; we therefore used a null model to create an
 unbiased estimate of pairwise \(D_{b_{ij}}\). In each null simulation,
 we randomly shuffled individual invertebrates among bromeliads, stopping
 when a bromeliad contained the same number of individuals as in our
@@ -305,13 +302,13 @@ experiment}\label{causes-of-different-size-responses-field-experiment}
 If a pair of taxa -- even close relatives -- show significant
 \(SES_{D}\), this indicates that processes other than numerical effects
 are driving this variation. Do these species respond differently to
-environmental variation (i.e.~to habitat size itself) or to species
+environmental variation (i.e.~to patch size itself) or to species
 interactions (presence of competitors and predators) or both? We chose
 one such species pair for our experiment: \emph{Polypedilum kaingang}
 and \emph{Polypedilum marcondesi} (Diptera: Chironomidae). We contrasted
 the performance (combined survival and emergence) of these two
 congeneric chironomids. This is a particularly interesting species pair,
-as \emph{P. kaingang} is a habitat size generalist whereas \emph{P.
+as \emph{P. kaingang} is a patch size generalist whereas \emph{P.
 marcondesi} occurs disproportionately in large bromeliads.
 
 To measure the effect of the abiotic gradient, we transplanted these two
@@ -405,9 +402,9 @@ pairs. Grey histograms represent means for 999 null simulations.}
 \centering
 \includegraphics[width=5.5in]{figures/ses_rank.pdf}
 \caption{Standardized effect sizes (SES) of pairwise differences
-between species for two different measures of habitat size sensitivity.
-These two measures are critical habitat size (\(A^{*}\)) and strength of
-habitat size dependency (\(x\)). Pairwise differences are shown within
+between species for two different measures of patch size response.
+These two measures are critical patch size (\(A^{*}\)) and strength of
+patch size dependency (\(x\)). Pairwise differences are shown within
 each of three taxonomic levels. Significant standardized effect sizes
 (randomization p-value \textless{} 0.05) are indicated with points.}
 \end{figure}
@@ -416,7 +413,7 @@ each of three taxonomic levels. Significant standardized effect sizes
 \centering
 \includegraphics[width=5.5in]{figures/astar.pdf}
 \caption{Differences in observed
-threshold habitat size (\(A^{*}\)) increases with taxonomic similarity
+threshold patch size (\(A^{*}\)) increases with taxonomic similarity
 of species pairs, measured as the lowest taxonomic rank in common
 between two species (black line connects observed means of each
 taxonomic rank).}
@@ -425,10 +422,9 @@ taxonomic rank).}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5.5in]{figures/xbar.pdf}
-\caption{Differences in habitat
-size sensitivity (\(x\)) between pairs of species, as a function of
+\caption{Differences in (\(x\)) between pairs of species, as a function of
 their taxonomic similarity, measured as the lowest taxonomic rank in
-common between the two species. Habitat size sensitivity was measured as
+common between the two species. (\(x\)) measures
 the slope of the incidence function. Black dots indicate observed
 species pairs; black line connects means of observed values. We observed
 no relationship between differences and taxonomic relatedness.}
@@ -438,8 +434,8 @@ no relationship between differences and taxonomic relatedness.}
 \centering
 \includegraphics[width=5.5in]{figures/poly_curve.pdf}
 \caption{Two closely
-related species that show very different responses to habitat size.
-\emph{Polypedilum marcondesi} is a habitat size specialist occurring
+related species that show very different responses to patch size.
+\emph{Polypedilum marcondesi} is a patch size specialist occurring
 only in large plants. \emph{Polypedilum kaingang} is found across the
 gradient of bromeliad size. Note logarithmic x-axis scale.}
 \end{figure}
@@ -455,7 +451,7 @@ gradient of bromeliad size. Note logarithmic x-axis scale.}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5.5in]{figures/confints.pdf}
-\caption{confidence intervals}
+\caption[Confidence intervals for larval emergence experiment]{Confidence intervals for the larval emergence experiment. We placed }
 \end{figure}
 
 
@@ -468,10 +464,10 @@ to patch size than would be expected by simple numerical effects,
 whether we considered threshold patch size (\(A^{*}\), Figure 2) or the
 strength of patch size preference (\(x\), Figure 2). Specifically, we
 found that all taxa were either equal or divergent in these two measures
-of their sensitivity to patch size (i.e.~there were no negative
+of their response to patch size (i.e.~there were no negative
 standardized effect sizes, Figure 4).
 
-\subsubsection{Observed habitat size differences and taxonomic
+\subsubsection{Observed patch size differences and taxonomic
 relatedness}\label{observed-habitat-size-differences-and-taxonomic-relatedness}
 
 Taxa that were more closely related tended to differ more in their size
@@ -486,19 +482,19 @@ relative abundance alone but that this difference was marginally
 insignificant (SES of observed slope, 1.48, p = 0.0851, Figure 5).
 
 Taxa that were more closely related tended to be more similar in the
-strength of their preference for habitat size (slope, 0.2 Figure 6).
+strength of their preference for patch size (slope, 0.2 Figure 6).
 This does not differ from the null expectation (Average of 999
 simulations -0.0091 $\pm$ 0.35, mean $\pm$ sd; SES of observed slope, 0.593, p =
 0.27, Figure 1.).
 
 After testing the broad patterns between taxonomic relatedness and
-habitat size preferences, we then focused specifically on the four
+patch size preferences, we then focused specifically on the four
 congeneric pairs in this community. Congeneric species showed
 significant differences in either their critical size thresholds or
 their strength of preference (Figure 4). All congeneric pairs except
 \emph{Polypedilum} sp. showed significant differences in their patch
 size thresholds (\(A^{*}\) values). This pattern is reversed for the
-strength of size sensitivity: no congeneric pairs except
+$x$: no congeneric pairs except
 \emph{Polypedilum} sp. showed a difference in the strength of habitat
 size preference (\(x\) values).
 
@@ -507,7 +503,7 @@ size preference (\(x\) values).
 We contrasted the performance (combined survival and emergence) of two
 congeneric chironomids: \emph{Polypedilum kaingang} and
 \emph{Polypedilum marcondesi}. This is a particularly interesting
-species pair, as \emph{P. kaingang} is a habitat size generalist whereas
+species pair, as \emph{P. kaingang} is a patch size generalist whereas
 \emph{P. marcondesi} occurs disproportionately in large bromeliads. We
 found no interaction between bromeliad size and experimental treatment
 on the performance of \emph{P. kaingang} (F\textsubscript{2,74} = 3.0, p
@@ -532,7 +528,7 @@ predators; competitors had no effect on either species (Figure 8).
 Differences between species in their response to patch size is the
 result of three processes: numerical effects, biotic interactions, and
 abiotic tolerances. We use a combined approach to quantify all three of
-these processes. First, we measured species responses to habitat size
+these processes. First, we measured species responses to patch size
 based on two parameters (\(A^{*}\) of incidence function), and the
 strength of that preference (\(x\) of incidence function). We then
 compared differences in these two parameters between all pairs of
@@ -583,7 +579,7 @@ competition. To investigate this possibility we examined the
 relationship between similarity in taxonomy and similarity in size
 response. We found a marginally insignificant trend for closely related
 species (especially congeneric species) to show larger differences in
-threshold habitat size (\(A^{*}\)). It is possible that with only four
+threshold patch size (\(A^{*}\)). It is possible that with only four
 congeneric pairs we simply did not have enough power to achieve
 significance. If real, such a pattern would be consistent with some
 negative interactions among close relatives. But even then, to
@@ -599,7 +595,7 @@ competition \citep{Narwani2015}. However, competitive exclusion may be
 rarer than ecologists assume, either because inter- and intra-specific
 competition are similar \citep{Hubbell1997}, or because strong top-down
 effects preclude resource limitation of intermediate trophic levels
-\citep{Holt2004}. Indeed, habitat size preferences can sometimes be
+\citep{Holt2004}. Indeed, patch size preferences can sometimes be
 driven by predator avoidance, where predators are found in large
 bromeliads \citep{Hammill2015}. Both predators and prey are found in
 most taxonomic categories (except genus) in this system, so predation
@@ -614,7 +610,7 @@ abiotic and biotic mechanisms.
 functions}\label{abiotic-and-biotic-mechanisms-affecting-incidence-functions}
 
 Once numerical effects are accounted for, a deeper understanding of why
-species differ in their sensitivity to patch size requires us to
+species differ in their response to patch size requires us to
 distinguish abiotic from biotic mechanisms. This is only possible with
 manipulative experiments. Here we decoupled interspecific competition
 and predation from abiotic differences between small and large
@@ -623,12 +619,9 @@ chironomids. This species pair was divergent the strength of their
 response to patch size (\(x\)): one a patch size specialist (\emph{P.
 marcondesi}) and the other a patch size generalist (\emph{P. kaingang}).
 
-If the two species do not compete, this difference in patch size
-sensitivity (\(x\)) could originate from differences in their abiotic
-tolerances. Specifically, the species with the weaker sensitivity to
-habitat size (\emph{P kaingang}) may be predicted to tolerate a broad
-range of habitat conditions, while the species with a stronger
-sensitivity (\emph{P. marcondesi}) may do well only in large plants. We
+If the two species do not compete, this difference in $x$ could originate from differences in their abiotic
+tolerances. Specifically, the species with the lower value of $x$ (\emph{P kaingang}) may tolerate a broad
+range of habitat conditions, while the species with a higher $x$ (\emph{P. marcondesi}) may do well only in large plants. We
 found a statistical effect that supports this biological mechanism: the
 specialist shows a significant decline in performance in small habitats,
 while the generalist performs well everywhere. Although the 95\% CIs of
