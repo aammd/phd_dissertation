@@ -150,7 +150,7 @@ productive elevations \citep{Sheppard1971}.
 We tested three hypotheses related to patch size response. First, using
 observational data, we account for numerical effects and test three
 hypotheses about community-level patterns: (1) there is more variation among species
-in patch size response than expected by chance. (2) species pairs are divergent in
+in patch size response than expected by chance. (2) species pairs tend to be divergent, rather than convergent, in
 both their critical size threshold (\(A^{*}\) value) and the strength of
 preferences (\(x\) value). (3) that this divergence in patch size
 response is greater for close relatives. We then use an experiment to
@@ -216,29 +216,30 @@ requires two steps: first, estimating average difference between species
 in patch size response from data, and second, comparing this community
 average to a null model. \textbf{Step 1:} We modelled the presence of
 invertebrate species as a logistic function of maximum plant volume (log
-transformed). We calculated two parameters from these logistic curves: as the inflection point -- the
+transformed). We calculated two parameters from these logistic curves: the inflection point -- the
 ``\(A^{*}\) value'' -- and \(x\), the slope of the linear predictor
 \citep{Ovaskainen2003}. The ``\(A^{*}\) value'' corresponds to the plant
 volume with a 50\% chance of species occurrence (i.e.~the inflection
-point of a logistic curve). For every pair of species we quantified the
-pairwise difference in their parameter estimates, as the absolute
-difference in estimates divided by the square root of summed squared
-standard errors:
+point of a logistic curve). We calculated \(A^{*}\) values with the function
+\texttt{dose.p} from the package MASS \citep{mass}. For every pair of species we quantified the
+pairwise difference in their parameter values, as the absolute
+difference between the two species. We use absolute value to estimate the difference, independant of the order of the subtraction.
 
-\[D_{b_{ij}} = \frac{|b_{i} - b_{j}|}{\sqrt{SE_{b_{i}}^{2} + SE_{b_{j}}^{2}}}\]
+\[D_{b_{ij}} = |b_{i} - b_{j}|\]
 
 Where \(b\) is the parameter estimate (either \(A^{*}\) or \(x\)) for
-each species (\(i\) and \(j\)) in a pair. We estimated \(x\) as the
-slope of the linear predictor in logistic regression, and \(A^{*}\) as
-the inflection point of the logistic curve (calculated with
-\texttt{dose.p} from the package MASS \citep{mass}).
+each species (\(i\) and \(j\)) in a pair.
 
-We calculated the average patch size response as the average difference
+To answer hypothesis (1) (more variation among species
+in patch size response than expected by chance). We calculated the average patch size response as the average difference
 between all pairs of species in their \(D_{b_{ij}}\) values (i.e.~we repeated this calculation once for \(A^{*}\) and again for \(x\)).
 
-\textbf{Step 2:} Species abundances can create spurious patterns in measurements of
-patch size response; we therefore used a null model to create an
-unbiased estimate of pairwise \(D_{b_{ij}}\). In each null simulation,
+\textbf{Step 2:} In order to answer hypothesis (2) (), we divised a test statistic for the difference in patch size response between two species.  This test statistic is again the absolute value of the difference between two parameter estimates (as in \(D_{b_{ij}}\)) but is divided by the pooled standard error for each parameter estimate:
+
+\[T_{b_{ij}} = \frac{|b_{i} - b_{j}|}{\sqrt{SE_{b_{i}}^{2} + SE_{b_{j}}^{2}}}\]
+
+In order to test the significance of this test statistic, we require an appropriate null distribution. Species abundances can create spurious patterns in measurements of
+patch size response; we therefore compared our statistic to the distribution expected under the hypothesis of random dispersal. We generated this distribution by randomization fo the observational data. In each null simulation,
 we randomly shuffled individual invertebrates among bromeliads, stopping
 when a bromeliad contained the same number of individuals as in our
 observation. This approach therefore maintains both the total number of
@@ -252,19 +253,13 @@ model is necessary because sampling effects can create large values of
 \(D_{b_{ij}}\). For example, rare species tend to have a higher observed
 \(A^{*}\) value, merely because they are more likely to be found in a
 large bromeliad with high abundance \citep{Srivastava2008}. We repeated
-this randomization 999 times. For every null simulation we re-calculated
-the values of \(D_{b_{ij}}\) for both \(A^{*}\) and \(x\), for all
-species pairs. We then averaged all \(D_{b_{ij}}\) within each
-simulation, creating a null distribution of community-level values of
-\(A^{*}\) and \(x\) (999 values each). We calculated the standardized
-effect size (SES) of the observed mean against this null distribution:
+this randomization 999 times. 
 
-\[SES_{D} = \frac{D_{obs} - \bar{D}_{null}}{SD_{null}}\]
 
-where \(\bar{D}_{null}\) is the mean of all null \(D_{b_{ij}}\) values
-and \(SD_{null}\) is the standard deviation of that that null
-distribution. We calculated a null p-value as the proportion of
-simulations that were more extreme than our observed \(D_{b_{ij}}\)
+For every null simulation we re-calculated both 
+ \(T_{A^{*}_{ij}}\) and \(T_{x_{ij}}\) for all
+species pairs. We calculated a randomization p-value as the proportion of
+simulations that were more extreme than our observed \(T_{b_{ij}}\)
 value for each parameter.
 
 \paragraph{(2) Divergence between species pairs in patch size
