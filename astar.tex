@@ -190,7 +190,7 @@ manipulated makes them ideal systems for investigating differences
 between coexisting species in response to patch size. Both
 observations and experiments were conducted in Parque Estadual da Ilha
 do Cardoso (25\textsuperscript{o} 03' S, 47\textsuperscript{o} 53' W), a
-22.5 ha island off the south coast of São Paulo state, Brazil. We worked
+22.5 ha island off the south coast of S\~ao Paulo state, Brazil. We worked
 in a coastal forest (\emph{restinga}) with an understory dominated by
 \emph{Quesnelia arvensis} Mez. (Bromeliaceae).
 
@@ -222,7 +222,7 @@ transformed). We calculated two parameters from these logistic curves: the infle
 volume with a 50\% chance of species occurrence (i.e.~the inflection
 point of a logistic curve). We calculated \(A^{*}\) values with the function
 \texttt{dose.p} from the package MASS \citep{mass}. For every pair of species we quantified the
-pairwise difference in their parameter values, as the absolute
+pairwise difference in their parameter values as the absolute
 difference between the two species. We use absolute value to estimate the difference, independant of the order of the subtraction.
 
 \[D_{b_{ij}} = |b_{i} - b_{j}|\]
@@ -237,13 +237,13 @@ between all pairs of species in their \(D_{b_{ij}}\) values (i.e.~we repeated th
 \paragraph{(2) Divergence between species pairs in patch size
 response}\label{divergence-between-species-pairs-in-patch-size-response}
 
-\textbf{Step 2:} In order to answer hypothesis (2) (species pairs tend to be divergent, rather than convergent), we used a test statistic for the difference in patch size response between two species.  This test statistic is again the absolute value of the difference between two parameter estimates (as in \(D_{b_{ij}}\)) but is divided by the pooled standard error for each parameter estimate:
+In order to answer hypothesis (2) (species pairs tend to be divergent, rather than convergent), we used a test statistic for the difference in patch size response between two species.  This test statistic is again the absolute value of the difference between two parameter estimates (as in \(D_{b_{ij}}\)) but is divided by the pooled standard error for each parameter estimate:
 
 \[T_{b_{ij}} = \frac{|b_{i} - b_{j}|}{\sqrt{SE_{b_{i}}^{2} + SE_{b_{j}}^{2}}}\]
 
 Where \(SE_{b_{i}}\) is the standard error of parameter \(b\) for species \(i\). This stastistic has a small value when species are convergent in the value of their estimates, and a large value when they are divergent. 
 
-In order to test the significance of this test statistic, we require an appropriate null distribution. Species abundances can create spurious patterns in measurements of
+In order to test the significance of this test statistic, we require an appropriate null distribution. \textbf{Step 2:} Species abundances can create spurious patterns in measurements of
 patch size response; we therefore compared our statistic to the distribution expected under the hypothesis of random dispersal. We generated this distribution by randomization fo the observational data. In each null simulation,
 we randomly shuffled individual invertebrates among bromeliads, stopping
 when a bromeliad contained the same number of individuals as in our
@@ -298,9 +298,7 @@ marcondesi} occurs disproportionately in large bromeliads.
 
 To measure the effect of the abiotic gradient, we transplanted these two
 species of \emph{Polypedilum} species across this bromeliad size
-gradient. We found 10 bromeliads which were larger and 10 smaller than
-the size threshold for the two \emph{Polypedilum} species, which we
-estimated as 500ml. In order to determine the volume of these plants
+gradient. We estimated the size threshold for the two \emph{Polypedilum} species as 500ml, and found 10 bromeliads which were larger and 10 smaller than this threshold. In order to determine the volume of these plants
 without disturbing their insect community, we used allometric equations
 based on the number of leaves: plants with \textless{} 35 leaves were
 categorized as ``small'', plants with \textgreater{} 45 leaves as
@@ -335,7 +333,7 @@ order to preserve the community of the leaf well as much as possible
 etc), we did not filter this water. We transferred this water to an
 experimental tube, which was placed deep in the original leaf well.
 Tubes isolated the water from the bromeliad environment, but had tubes
-with large holes in the side, covered with Nytex™ mesh (0.5mm). The mesh
+with large holes in the side, covered with Nytex\textsuperscript{TM} mesh (0.5mm). The mesh
 let water flow into the tube from the bromeliad, maintaining the water
 chemistry within the tube. The tubes were also capped with a mesh bag,
 which allowed us to capture emerging adults.
@@ -360,12 +358,10 @@ the mean of both treatments with competitors (with and without
 predators) with the control treatment (no competitors or predators).
 This was our ``competitor absent'' treatment.
 
-\subsubsection{Figures}\label{figures}
-
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5.5in]{figures/astar_x_rank.pdf}
-\caption[Bromeliad species vary in two different responses to patch size]{Bromeliad species vary in two different responses to patch size. Points are parameter estimates \(pm\) standard error for all species in the observational dataset. Points are ranked from lowest to highest for each estimate. Point size is in proporiton to the fraction of patches (bromeliads) that a species occupies. One point (the lowest \(A^{*}\) value) is omitted for clarity.}
+\caption[Macroinvertebrates in bromeliads vary in two different responses to patch size]{Macroinvertebrates in bromeliads vary in two different responses to patch size. Points are parameter estimates $\pm$ standard error for all species in the observational dataset. Points are ranked from lowest to highest for each estimate. Point size is in proporiton to the fraction of patches (bromeliads) that a species occupies. One point (the lowest \(A^{*}\) value) is omitted for clarity.}
 \label{fig:astar_x_rank}
 \end{figure}
 
@@ -381,9 +377,7 @@ This was our ``competitor absent'' treatment.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5.5in]{figures/pvalue_dist.pdf}
-\caption[Average differences in pairwise responses are greater than expected by chance]{Average differences in pairwise responses are greater than expected by chance. Each density plot shows mean pairwise differences between species in two measures of patch size responses: patch size threshold (\(A^{*}\)) and strength of patch size preference
-(\(x\)). Dashed vertical lines represent observed means for all species
-pairs. Grey histograms represent means for 999 null simulations.}
+\caption[Most species pairs differ from the null expectation]{Most species pairs differ from the null expectation. Histograms show the distribtion of pairwise test statistics ()\(T_{b_{ij}}\)) values for both patch size threshold (\(A^{*}\)) and strength of patch size preference (\(x\)). Each observed value is compared against the null distribution for that species pair (999 replications). Values to the left of the dashed line are \(p < 0.05\).}
 \label{fig:pvalhist}
 \end{figure}
 
@@ -415,11 +409,10 @@ pairs. Grey histograms represent means for 999 null simulations.}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5.5in]{figures/astar_and_x_diff.pdf}
-\caption[Differences in \(A^{*}\)) and (\(x\)) between pairs of species]{Differences in \(A^{*}\)) and (\(x\)) between pairs of species, as a function of
+\caption[Absolute differences in \(A^{*}\) and \(x\) between pairs of species]{Differences in \(A^{*}\)) and (\(x\)) between pairs of species, as a function of
 their taxonomic similarity, measured as the lowest taxonomic rank in
-common between the two species. \(A^{*}\)) is the inflection point of the indicende function, while (\(x\)) is its slope. Black dots indicate observed
-species pairs; black line shows a linear regression of \(D_{b_{ij}}\) as a function of taxonomic rank. We observed
-no relationship between differences and taxonomic relatedness.}
+common between the two species. \(A^{*}\)) is the inflection point of the incidence function, while (\(x\)) is its slope. Black dots indicate observed
+species pairs; black line shows a linear regression of \(D_{b_{ij}}\) as a function of taxonomic rank. However, these regressions are not significantly different from a null model.}
 \label{fig:astar_x_taxo}
 \end{figure}
 
@@ -432,7 +425,7 @@ gradient of bromeliad size.]{Two closely
 related species that show very different responses to patch size.
 \emph{Polypedilum marcondesi} is a patch size specialist occurring
 only in large plants. \emph{Polypedilum kaingang} is found across the
-gradient of bromeliad size. Note logarithmic x-axis scale.}
+gradient of bromeliad size. That is, their incidence functions show a strong difference in their $x$ parameters. Note logarithmic x-axis scale.}
 \label{fig:poly_curve}
 \end{figure}
 
@@ -442,7 +435,7 @@ gradient of bromeliad size. Note logarithmic x-axis scale.}
 \includegraphics[width=5.5in]{figures/anova_data.pdf}
 \caption[Performance (larvae + emergences) of \emph{P. marcondesi} and
 \emph{P. kaingang}.]{Performance (larvae + emergences) of \emph{P. marcondesi} and
-\emph{P. kaingang} across all biotic treatments.}
+\emph{P. kaingang} across all biotic treatments. Predation had a large effect on both species, while competition had no effect.}
 \label{fig:performance}
 \end{figure}
 
@@ -457,10 +450,10 @@ gradient of bromeliad size. Note logarithmic x-axis scale.}
 \subsection{Results}\label{results}
 
 We observed 21 morphospecies of aquatic larvae in the 2008 survey, of
-which 17 could be identified enough for our taxonomic analysis. On average, pairs of species were more divergent in their response
+which 17 could be identified enough for our taxonomic analysis (Figure \ref{fig:astar_x_rank}. On average, pairs of species were more divergent in their response
 to patch size than would be expected by simple numerical effects,
-whether we considered threshold patch size (\(A^{*}\), Figure \ref{fig:meanpairwise}) or the
-strength of patch size preference (\(x\), Figure \ref{fig:meanpairwise}). Specifically, we
+whether we considered threshold patch size (\(A^{*}\), Figure \ref{fig:pvalhist}) or the
+strength of patch size preference (\(x\), Figure \ref{fig:pvalhist}). Specifically, we
 found that all taxa were either non-signifincant or divergent in these two measures
 of their response to patch size (i.e.~there were no significantly convergent values).
 
@@ -469,26 +462,18 @@ relatedness}\label{observed-habitat-size-differences-and-taxonomic-relatedness}
 
 Taxa that were more closely related tended to differ more in their size
 thresholds (\(A^{*}\) values) than more distantly related taxa (slope =
-0.99, Figure \ref{fig:astar_taxo}). Null models predict the opposite relationship: based
-just on numerical effects, taxa that are more closely related tend to
-differ less in their size thresholds (slope $\pm$
-sd 0.017 $\pm$ 0.66). Comparing the actual with null model pattern, we can
-conclude that observed species pairs (especially congenerics) had
+602, Figure \ref{fig:astar_x_taxo}). Observed species pairs (especially congenerics) had
 greater differences in critical size than expected from variation in
 relative abundance alone but that this difference was marginally
-insignificant (p = 0.0851, Figure 5).
+insignificant (p = 0.0681, Figure \ref{fig:astar_x_taxo}).
 
-Taxa that were more closely related tended to be more similar in the
-strength of their preference for patch size (slope, 0.2 Figure 6).
-This does not differ from the null expectation (Average of 999
-simulations -0.0091 $\pm$ 0.35, mean $\pm$ sd; p =
-0.27, Figure 1.).
+Taxa that were more closely related tended to be more similar in \(x\) (slope = 0.009, Figure \ref{fig:astar_x_taxo}). This does not differ from the null expectation (p = 0.18, Figure \ref{fig:astar_x_rank}).
 
 After testing the broad patterns between taxonomic relatedness and
 patch size preferences, we then focused specifically on the four
 congeneric pairs in this community. Congeneric species showed
 significant differences in either their critical size thresholds or
-their strength of preference (Figure 4). All congeneric pairs except
+their strength of preference (Figure \ref{fig:pvalhist}). All congeneric pairs except
 \emph{Polypedilum} sp. showed significant differences in their patch
 size thresholds (\(A^{*}\) values). This pattern is reversed for the
 $x$: no congeneric pairs except
@@ -513,12 +498,12 @@ Plant size reduced the performance of \emph{P. marcondesi}
 
 Chironomid performance was always greater in predator-free treatments.
 Predators reduced survival by 73\% in \emph{P. marcondesi} and reduced
-performance by 95\% in \emph{P. kaingang} (see Figure 8 for
+performance by 95\% in \emph{P. kaingang} (see Figure \ref{fig:contrasts} for
 within-factor contrasts and confidence intervals). Overall our community
 factor had a significant impact on chironomid performance (\emph{P.
 marcondesi}, F\textsubscript{2,74} = 4.7, p = 0.012; \emph{P. kaingang},
 F\textsubscript{2,74} = 7.1, p = 0.0019). This effect was driven by
-predators; competitors had no effect on either species (Figure 8).
+predators; competitors had no effect on either species (Figure \ref{fig:contrasts}).
 
 \subsection{Discussion}\label{discussion}
 
@@ -712,5 +697,3 @@ this difference in niche breath was caused by different abiotic
 tolerances. Understanding the mechanisms that create variation among
 species in their incidence is critical to understanding how variation in
 patch size affects species persistence in a metacommunity.
-
-\subsection{References}\label{references}
