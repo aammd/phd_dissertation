@@ -451,7 +451,7 @@ distribution}\label{hypothesis-1-similarity-in-distribution}
 
 We did not find any significant relationship between predator
 co-occurrence in bromeliads (measured as Pianka's index of niche
-overlap) and the phylogenetic distance between them (Figure 1a,
+overlap) and the phylogenetic distance between them (Figure \ref{fig:phylo_niche_overlap}a,
 F\textsubscript{1,89}=2.39, p=0.13). This indicates that all 14 predator
 species have roughly similar habitat distributions at the level of the
 bromeliad. Indeed we often found multiple predator species co-occurring
@@ -486,21 +486,21 @@ We analyzed our five univariate response variables from the manipulative
 experiment by dividing them into four separate and orthogonal tests:
 predator presence, predator number, predator species identity and,
 increasing predator phylogenetic diversity. Across all four tests, we
-saw the strongest responses for total prey survivorship (Table 1). Prey
-survivorship was halved when predators were present (Figure 2a, Table
+saw the strongest responses for total prey survivorship (Table \ref{tab:predator_diversity}). Prey
+survivorship was halved when predators were present (Figure \ref{fig:ortho_pred_effect}a, Table
 1). Despite the decline in diet similarity with phylogenetic distance
 (Question 2), the variation in predator feeding behaviour did not
 translate into a significant differences in the composition of prey
 species surviving the manipulative experiment (Fig 1c,
 F\textsubscript{1,4}=0.71, p=0.45, distance measured as Bray-Curtis
 dissimilarity). Although single predator species had similar effects on
-survivorship (Figure 2c, Table 1), combinations of predators with higher
+survivorship (Figure \ref{fig:ortho_pred_effect}c, Table \ref{tab:predator_diversity}), combinations of predators with higher
 phylogenetic diversity showed a significant increase in total prey
-survivorship (Fig 2d). That is, more phylogenetically diverse predator
+survivorship (Figure \ref{fig:ortho_pred_effect}d). That is, more phylogenetically diverse predator
 combinations caused less prey mortality. Interestingly, these effects on
 prey surviorship did not result in a change in the processing of
 detritus (measured either as reduction in coarse detritus or production
-of fine detritus), bromeliad growth or nitrogen cycling (Table 1).
+of fine detritus), bromeliad growth or nitrogen cycling (Table \ref{tab:predator_diversity}).
 
 We tested for non-additive effects of predator phylogenetic diversity
 with bootstrap confidence intervals. When we compared the actual effects
@@ -511,16 +511,16 @@ phylogenetic diversity had the highest prey survival. Whereas effects of
 similar to the effect of either alone, when \emph{L. elongatum} was
 placed in the same plant as either a \emph{Stibasoma} larva or leeches,
 on average five more prey individuals (18\% of total prey community)
-survived till the end of the experiment (Fig 3; Tabanid, p = 0.006,
+survived till the end of the experiment (Figure \ref{fig:non_additive}; Tabanid, p = 0.006,
 Leech, p = 0.026). Once again, this effect on invertebrate density did
 not in turn create a significant difference in other response variables.
 
-\subsubsection{Figures}\label{figures}
-
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/FIG_1.pdf}
-\caption{Phylogenetic distance between predators as a
+\includegraphics[width=5.5in]{figures/FIG_1.pdf}
+\caption[Phylogenetic distance between predators as a
+predictor of niche overlap among predators and impacts on prey
+composition.]{Phylogenetic distance between predators as a
 predictor of niche overlap among predators and impacts on prey
 composition. Our measures of niche overlap were: (a) distribution among
 bromeliads and (b) diet preferences. We also show the effect of
@@ -538,13 +538,15 @@ Pianka's index of niche overlap (1 = complete niche overlap) and tested
 various nonlinear and linear models (see Appendix) of the relationship
 between this index and phylogenetic distance. Solid lines show
 significant model fit, and dashed lines show bootstrap 95\% quantiles.}
+\label{fig:phylo_niche_overlap}
 \end{figure}
 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/FIG_2.pdf}
-\caption{Orthogonal comparisons of the effect of predators on
+\includegraphics[width=5.5in]{figures/FIG_2.pdf}
+\caption[Orthogonal comparisons of the effect of predators on
+prey survival. ]{Orthogonal comparisons of the effect of predators on
 prey survival. We show the effects of predator presence (a), and then
 within predator present treatments the effects of predator species
 number (b). Within treatments with one predator species, we show effects
@@ -556,25 +558,29 @@ order of increasing phylogenetic distance: Low = \emph{L. andromache} +
 group; unshaded dots are either treatment means (2a and 2b, n = 5) or
 individual bromeliads (2c and 2d). Points are jittered horizontally
 slightly to reveal all datapoints.}
+\label{fig:ortho_pred_effect}
 \end{figure}
 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/FIG_3.pdf}
-\caption{Non-additive effects of predator combinations on prey
+\includegraphics[width=5.5in]{figures/FIG_3.pdf}
+\caption[Non-additive effects of predator combinations on prey
+decrease with increasing phylogenetic distance between predators]{Non-additive effects of predator combinations on prey
 decrease with increasing phylogenetic distance between predators. A
 difference of 0 indicates that two-predator treatments resulted in no
 more prey mortality than would be expected from simply averaging
 single-predator treatments. A negative difference indicates that
 two-predator treatments resulted in less mortality than expected. Error
 bars represent bootstrap 95\% confidence intervals.}
+\label{fig:non_additive}
 \end{figure}
 
 \begin{table}
-\caption[resptable]{Predator diversity effects on community and ecosystem
+\caption[Predator diversity effects on community and ecosystem
+variables.]{Predator diversity effects on community and ecosystem
 variables. We measured five community-level variables: total prey
-survival (both emerged adults and surviving larvae; see Figure 1), the
+survival (both emerged adults and surviving larvae; see Figure \ref{fig:ortho_pred_effect}), the
 breakdown of coarse detritus (decomposition), the production of fine
 particulate organic matter (FPOM), the cycling of nitrogen, and the
 growth of the bromeliad itself. We contrast treatments in our
@@ -679,6 +685,7 @@ Nitrogen cycling
 -0.00 $\pm$ 0.01;\\ F\textsubscript{1,13} = 0.15
 \strut\end{minipage}\tabularnewline
 \bottomrule
+\label{tab:predator_diversity}
 \end{longtable}
 \end{table}
 
