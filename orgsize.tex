@@ -110,16 +110,16 @@ patterns in composition re-emerged. We predicted:
   If environmental filtering, but not dispersal limitation, increases
   with organism size, we would predict that habitat would affect the
   composition of communities of large-bodied organisms more than those
-  of small-bodied organisms(Figure 1a). 
+  of small-bodied organisms(Figure \ref{fig:illustration}a). 
 \item
   If instead only dispersal limitation increased with organism size, we
   would expect that any apparent effect of habitat on community
   composition was an artifact of spatial autocorrelation and would be
-  erased by our removal of dispersal limitation (Figure 1b).
+  erased by our removal of dispersal limitation (Figure \ref{fig:illustration}b).
 \item
   If both environmental filtering and dispersal limitation increased
   with organism size, we would predict an intermediate scenario (Figure
-  1c).
+  \ref{fig:illustration}c).
 \end{enumerate}
 
 \subsubsection{Study system}\label{study-system}
@@ -177,7 +177,7 @@ sun; only shade plants were used in this study.
 For each of five temporal blocks, we collected and sampled the
 macroinvertebrates, zooplankton and bacteria of two bromeliads of each
 of the three species. We then homogenized the communities of all six
-bromeliads as described shortly (Figure 2). Our goal was to create
+bromeliads as described shortly (Figure \ref{fig:schematic}). Our goal was to create
 identical starting community composition for all bromeliads within a
 block. Variation between blocks in starting community composition is
 thus included in the random effect of blocks. We created five blocks in
@@ -195,7 +195,7 @@ associated habitats.}
 \label{fig:schematic}
 \end{figure}
 
-Our experimental setup consisted of three steps (Figure 2): collection
+Our experimental setup consisted of three steps (Figure \ref{fig:schematic}): collection
 of original communities from bromeliads, homogenization of communities,
 and assembly of this homogenized community in each of the original (now
 empty) bromeliads. \textbf{Original communities}: We sampled the
@@ -250,7 +250,7 @@ empty of organisms
 
 \subsubsection{Analyses}\label{analyses}
 
-We distinguished between our three predictions (Figure 1) with a
+We distinguished between our three predictions (Figure \ref{fig:illustration}) with a
 permutational ANOVA (PERMANOVA), which measures the amount of difference
 in community composition between treatment groups and compares this to
 the expected distribution under a null hypothesis of no treatment
@@ -259,7 +259,7 @@ that permutations were performed within blocks. We repeated this
 analysis for all three organism types, and at both ``initial'' and
 ``final'' sampling dates (i.e.~at the beginning and end of the
 experiment). We interpreted the R\textsuperscript{2} value of this
-PERMANOVA as a metric of the strength of habitat filtering (Figure 1).
+PERMANOVA as a metric of the strength of habitat filtering (Figure \ref{fig:illustration}).
 Our hypothesis predicted that R\textsuperscript{2} values should
 increase from smaller to larger organism types. However, because we
 sampled each of these groups with different techniques, and collected
@@ -287,7 +287,7 @@ conducted in R 3.2.3 \citep{rcore}.
 
 Bromeliad species identity explains more variation in community
 composition of macroinvertebrates than any other organism type, less for
-zooplankton and less still for bacteria (Figure 3, Table 1). For all
+zooplankton and less still for bacteria (Figure \ref{fig:r2test}, Table \ref{tab:rsquares}). For all
 organism types, bromeliad species explained less of the variation in
 composition at the end of the experiment than at the beginning. Note
 that, although the sampling design (and therefore degrees of freedom)
@@ -314,10 +314,21 @@ found that the observed slope was much higher than the null simulations
 for both initial (SES = 6.18, p = 0.002) and final (SES = 4.82, p =
 0.002) sampling (499 simulations).
 
-\subsubsection{Tables}\label{tables}
 
-\begin{center} 
 \begin{table}[h] 
+\begin{tabular}[c]{r l l l l} 
+
+\toprule
+                   &         & F\textsubscript{2,27} & p & R\textsuperscript{2} \\
+\midrule
+macroinvertebrates & before  & 7.03 & 0.001 & 0.34 \\
+                   & after   & 6.42 & 0.001 & 0.32 \\
+zooplankton        & before  & 2.59 & 0.008 & 0.16 \\
+                   & after   & 1.75 & 0.158 & 0.11 \\
+bacteria           & before  & 0.69 & 0.085 & 0.05 \\
+                   & after   & 0.63 & 0.027 & 0.04 \\
+\bottomrule
+\end{tabular}
 \caption[Bromeliad species effects on the composition of three groups of organisms]{Bromeliad species effects on the composition of three types of
 organisms, as determined by PERMANOVAs both before and 12 days after
 homogenization. Both before and after homogenization,
@@ -325,21 +336,8 @@ R\textsuperscript{2} values (our proxy for the strength of habitat
 filtering) are higher for macroinvertebrates than for zooplankton than
 for bacteria. Following homogenization, macroinvertebrate and bacterial
 communities both significantly diverged among bromeliad species.} 
-\label{table:r2s} 
-\vspace{10pt} 
-\begin{tabular}[c]{l l l l l} 
-\hline 
-& & F227 & p & R2 \\
-macroinvertebrates & before & 7.03 & 0.001 & 0.34 \\
-& after & 6.42 & 0.001 & 0.32 \\
-zooplankton & before & 2.59 & 0.008 & 0.16 \\
-& after & 1.75 & 0.158 & 0.11 \\
-bacteria & before & 0.69 & 0.085 & 0.05 \\
-& after & 0.63 & 0.027 & 0.04 \\
-\end{tabular}
 \label{tab:rsquares} 
 \end{table} 
-\end{center} 
 
 \begin{figure}[htbp]
 \centering
@@ -367,13 +365,13 @@ bacterial communities to an identical environmental gradient. Our
 initial sampling prior to the experimental manipulation found that the
 correlation between environment and community composition is weakest for
 bacteria, intermediate for zooplankton, and strongest for
-macroinvertebrates (Figure 3). This observational pattern mirrors that
+macroinvertebrates (Figure \ref{fig:r2test}). This observational pattern mirrors that
 previously reported by Farjalla et al. \citeyearpar{Farjalla2012},
 confirming that the observational pattern is robust to differences in
 field site and year. However, this observed pattern may have been caused
 by differences among the three organism types in the strength of
 environmental filtering or environmentally-correlated dispersal, or both
-(Figure 1). We therefore removed dispersal limitation among communities
+(Figure \ref{fig:illustration}). We therefore removed dispersal limitation among communities
 by homogenizing our starting communities, and then returned communities
 to the same environmental gradient to test whether pure environmental
 filtering was sufficient to restore the initial pattern in
@@ -381,7 +379,7 @@ distributions. Our results are most consistent with environmental
 filtering increasing with organism size (Fig 1a). Specifically, we found
 that the environment created minimal differences in bacteria, weak
 differences in zooplankton, and large differences in macroinvertebrates
-(Figure 3).
+(Figure \ref{fig:r2test}).
 
 Our experimental manipulation suggests that environmental filtering is
 stronger for larger than smaller organisms, and that this explains the
@@ -507,7 +505,7 @@ macroinvertebrates to many millions of individuals for abundant bacteria
 taxa. Ecological drift -- the variation in species composition caused by
 the stochastic sequence of births and deaths - should be strongest
 therefore for macroinvertebrates and zooplankton, countering the
-deterministic signal of environmental filtering (Figure 1b).
+deterministic signal of environmental filtering (Figure \ref{fig:illustration}b).
 Nevertheless, we still observed the strongest environmental effects on
 macroinvertebrates and zooplankton, suggesting that our results are
 robust to any effects of drift.
